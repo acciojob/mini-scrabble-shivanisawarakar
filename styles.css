@@ -1,2 +1,72 @@
 
 /* Your CSS Code here. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: bisque;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#evaluatedText
+{
+    width: 100% ;
+    height: 80%;
+    font-size: 15px;
+    outline: none;
+}
+#tcount,#wcount{
+ 
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#wordCount, #letterCount{
+    margin-right: 2rem;
+    
+    color: rgb(245, 11, 11);
+    font-weight: 400;
+}
+
+
+.count{
+     display: flex;
+    justify-content: flex-start;
+}
+
+.container{
+    background-color: coral;
+    padding: 1rem;
+    box-shadow: 5px 5px;
+    border-radius: 10px;
+    width: 50%;
+    height: 40%;
+}
+@media screen and (max-width: 480px) {
+    
+    .count{
+       display: flex;
+       justify-content: flex-start;
+       flex-direction: column;
+   }
+
+   .container{
+        width: 80%;
+        height: 50%;
+    }
+
+}
