@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Scrabble</title>
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <p>Live Character, Word Count</p>
-   
-    <div class="container">
-       
-        <textarea id="evaluatedText" placeholder="Your text here" onkeyup="keycount()"></textarea>
+	<!-- the entire body must be written by student -->
+	<label for="evaluatedText">Enter Your Word:</label>
+    <input type=" text" id="evaluatedText"name="evaluatedText">
+    <h3 id="letterCount">0</h3>
 
-        <div class="count">
-            <h3 id="letterCount">CHARACTERS <span id="tcount">0</span></h3>
-            <h3 id="wordCount">WORD <span id="wcount">0</span></h3>
-            <!-- <h3 id="sentance">SENTANCES <span id="scount">0</span></h3> -->
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="./script.js">
+</script>
+
 </body>
-
 </html>
