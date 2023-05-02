@@ -1,11 +1,8 @@
 //your code here
-let evaluatedText= document.getElementById("evaluatedText");
-let letterCount=document.getElementById("letterCount");
+let evaluatedText = document.getElementById("evaluatedText");
+let letterCount = document.getElementById("letterCount");
 
-evaluatedText.addEventListener("input",calculateLength)
-
-function calculateLength(){
-    let word= evaluatedText.value;
-    let wordLength=word.length;
-    letterCount.innerHTML=wordLength;
-}
+evaluatedText.addEventListener('input', () => {
+	let str = evaluatedText.value;
+	letterCount.innerHTML = `${str.length}`;
+});
